@@ -1,0 +1,14 @@
+service:
+  apidocurl: http://localhost:8080/v2/api-docs
+---
+spring.profiles: public
+service:
+  apidocurl: http://localhost:8080/v2/api-docs?group=public
+---
+spring.profiles: user
+service:
+  apidocurl: http://localhost:8080/v2/api-docs?group=user
+---
+spring.profiles: admin
+service:
+  apidocurl: http://localhost:8080/v2/api-docs?group=admin
