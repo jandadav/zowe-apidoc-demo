@@ -1,14 +1,23 @@
 service:
   apidocurl: http://localhost:8080/v2/api-docs
 ---
-spring.profiles: public
+spring:
+  config:
+    activate:
+      on-profile: public
 service:
-  apidocurl: http://localhost:8080/v2/api-docs?group=public
+  apidocurl: http://localhost:8080/v2/api-docs?group=publicapi
 ---
-spring.profiles: user
+spring:
+  config:
+    activate:
+      on-profile: user
 service:
-  apidocurl: http://localhost:8080/v2/api-docs?group=user
+  apidocurl: http://localhost:8080/v2/api-docs?group=userapi
 ---
-spring.profiles: admin
+spring:
+  config:
+    activate:
+      on-profile: admin
 service:
-  apidocurl: http://localhost:8080/v2/api-docs?group=admin
+  apidocurl: http://localhost:8080/v2/api-docs?group=adminapi
