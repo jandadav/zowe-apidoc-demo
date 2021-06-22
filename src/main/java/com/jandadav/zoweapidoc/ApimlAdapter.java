@@ -25,7 +25,7 @@ public class ApimlAdapter {
     public void register() throws ServiceDefinitionException {
         String configurationFile = "/service-configuration.yml";
         ApiMediationServiceConfig config = new ApiMediationServiceConfigReader().loadConfiguration(configurationFile);
-        config.getApiInfo().get(0).setDocumentationUrl(apiDocUrl);
+        config.getApiInfo().get(0).setSwaggerUrl(apiDocUrl);
         try {
             apiMediationClient = new ApiMediationClientImpl();
             apiMediationClient.register(config);

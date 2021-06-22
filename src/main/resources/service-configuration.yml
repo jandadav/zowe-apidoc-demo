@@ -1,13 +1,13 @@
 serviceId: zoweapidoc
 title: Zowe Apidoc
 description: Zowe Apidoc sample application
-baseUrl: https://localhost:8080/
+baseUrl: https://localhost:8080
 serviceIpAddress: 127.0.0.1
 preferIpAddress: false
 
 homePageRelativeUrl: /greeting
-statusPageRelativeUrl:
-healthCheckRelativeUrl:
+statusPageRelativeUrl: /
+healthCheckRelativeUrl: /
 
 discoveryServiceUrls:
   - https://localhost:10011/eureka
@@ -20,7 +20,7 @@ apiInfo:
   - apiId: com.jandadav.zoweapidoc
     version: 1.0.0
     gatewayUrl: api/v1
-    swaggerUrl: http://localhost:8080/v2/api-docs
+    swaggerUrl:
     doumentationUrl: http://
 
 
